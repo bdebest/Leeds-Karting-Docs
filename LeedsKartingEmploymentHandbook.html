@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leeds Karting Employment Team Handbook</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f0f2f5; display: flex; justify-content: center; align-items: flex-start; min-height: 100vh; padding: 20px; }
+        .a4-page { width: 210mm; min-height: 297mm; background-color: #ffffff; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); border-radius: 8px; padding: 30mm 25mm; box-sizing: border-box; position: relative; overflow: hidden; }
+        .footer-text { position: absolute; bottom: 20mm; left: 25mm; right: 25mm; text-align: center; font-size: 0.8rem; color: #6b7280; }
+        .signature-font { font-family: 'Dancing Script', cursive; font-size: 1.8rem; font-weight: 700; color: #1f2937; margin-bottom: 4px; }
+    </style>
+</head>
+<body>
+    <div class="a4-page">
+        <!-- Header Section - No logo, just text title -->
+        <div class="flex items-center justify-center mb-8 pb-4 border-b-2 border-gray-200">
+            <h1 class="text-4xl font-bold text-gray-800 tracking-wide text-center">Leeds Karting Employment Team Handbook</h1>
+        </div>
+
+        <!-- Table of Contents -->
+        <div class="mb-10">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-4 border-b border-gray-300 pb-2">Table of Contents</h2>
+            <ul class="list-disc list-inside text-gray-600 space-y-2">
+                <li><a href="#introduction" class="text-blue-600 hover:underline">Introduction to Employment</a></li>
+                <li><a href="#recruitment" class="text-blue-600 hover:underline">Recruitment Process & Commands</a></li>
+                <li><a href="#onboarding" class="text-blue-600 hover:underline">Onboarding & Training Oversight</a></li>
+                <li><a href="#performance" class="text-blue-600 hover:underline">Performance Management & Reviews</a></li>
+                <li><a href="#offboarding" class="text-blue-600 hover:underline">Offboarding Procedures</a></li>
+                <li><a href="#document-authorization" class="text-blue-600 hover:underline">Document Authorization</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content Sections -->
+        <section id="introduction" class="mb-8">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-4 border-b border-gray-300 pb-2">1. Introduction to Employment</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                This handbook guides the Leeds Karting Employment Team in all aspects of human resources, from recruitment to offboarding. Our goal is to attract, develop, and retain the best talent for our Roblox go-karting company, ensuring that all staff members are well-suited for their roles and contribute positively to our community. This handbook specifically covers the employment of staff in roles such as Guest Services Associate, First Aid Officer, Track Marshall, Developer, Kart Mechanic, and Security. The General Manager and Board of Directors roles have separate management and oversight responsibilities.
+            </p>
+        </section>
+
+        <section id="recruitment" class="mb-8">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-4 border-b border-gray-300 pb-2">2. Recruitment Process & Commands</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                The recruitment process at Leeds Karting is designed to identify and onboard individuals who align with our values and can effectively contribute to our team.
+            </p>
+
+            <h3 class="text-xl font-semibold text-gray-700 mb-2">2.1 Vacancy Announcements</h3>
+            <ul class="list-disc list-inside text-gray-700 space-y-2 pl-4 mb-4">
+                <li>Vacancies for staff roles are announced through the `/employmentpost` command, which is exclusively used by the Board of Directors. This command publishes available positions for the community to see.</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold text-gray-700 mb-2">2.2 Application Process</h3>
+            <ul class="list-disc list-inside text-gray-700 space-y-2 pl-4 mb-4">
+                <li>Interested users apply for roles by using the `/apply` command, which initiates an application ticket.</li>
+                <li>Within this ticket, applicants will be asked a series of questions (the specific questions are detailed in a separate, internal document).</li>
+                <li>The Employment Team reviews these applications, paying close attention to **Spelling, Punctuation, and Grammar (SPaG)**, as well as the **accuracy and thoughtfulness** of the responses.</li>
+                <li>**Second Opinion:** It is mandatory to seek a second opinion from another member of the Employment Team for every application review.</li>
+                <li>**Background Checks:** Before any acceptance, a thorough background check must be conducted. This includes:
+                    <ul class="list-circle list-inside text-gray-700 space-y-1 pl-6 mt-1">
+                        <li>A security server background check to identify any past security incidents or red flags.</li>
+                        <li>A moderation history check within the Leeds Karting server to review any past violations or disciplinary actions.</li>
+                    </ul>
+                </li>
+                <li>**Acceptance Criteria:** An application can only be accepted if **two members** of the Employment Team agree on the applicant's suitability after reviewing their responses and conducting all necessary background checks.</li>
+                <li>**Notification of Results:**
+                    <ul class="list-circle list-inside text-gray-700 space-y-1 pl-6 mt-1">
+                        <li>**Accepted Applicants:** Will be notified of their successful application, congratulated, and immediately given the appropriate staff roles within the Discord server and in-game.</li>
+                        <li>**Denied Applicants:** Will be notified of their denial. While specific reasons for denial are generally not provided to maintain fairness and prevent circumvention, general feedback (e.g., "lacking sufficient detail in responses," "issues identified in background check") may be given at the team's discretion.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3 class="text-xl font-semibold text-gray-700 mb-2">2.3 Employment Team Commands</h3>
+            <ul class="list-disc list-inside text-gray-700 space-y-2 pl-4">
+                <li><span class="font-semibold">`/applicationclose [ticketID]`:</span> Used to close an application ticket once it has been reviewed and a decision has been made. Always include a reason in the ticket's notes.</li>
+                <li><span class="font-semibold">`/applicationblacklist [user]`:</span> Used to prevent a specific user from submitting future applications. This command should be used only for severe or repeated misuse of the application system, or for individuals deemed unsuitable for employment due to significant past violations. Requires Supervisor or General Manager approval.</li>
+                <li><span class="font-semibold">`/applicationunblacklist [user]`:</span> Used to remove a user from the application blacklist, allowing them to apply again. This should only occur after a review of their past conduct and a decision by management that they are now eligible.</li>
+            </ul>
+        </section>
+
+        <section id="onboarding" class="mb-8">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-4 border-b border-gray-300 pb-2">3. Onboarding & Training Oversight</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                The Employment Team is responsible for ensuring a smooth transition for new hires into their roles. While departmental Supervisors conduct the direct training, the Employment Team has an oversight role.
+            </p>
+            <ul class="list-disc list-inside text-gray-700 space-y-2 pl-4">
+                <li>**Training Timeline:** The Employment Team must ensure that the respective departmental Supervisor conducts a comprehensive training session for each newly hired "Employee in Training" within **one week** of their hiring date.</li>
+                <li>**Follow-Up:** Regular checks should be made with both the new employee and their Supervisor to confirm training is underway and progressing effectively.</li>
+                <li>**Escalation:** If a Supervisor fails to conduct the required training within the one-week timeframe, the Employment Team is responsible for bringing this matter directly to the attention of the Board of Directors for immediate resolution.</li>
+            </ul>
+        </section>
+
+        <section id="performance" class="mb-8">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-4 border-b border-gray-300 pb-2">4. Performance Management & Reviews</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                The Employment Team plays a vital role in the ongoing development and performance tracking of new staff members.
+            </p>
+            <ul class="list-disc list-inside text-gray-700 space-y-2 pl-4">
+                <li>**Post-Training Review:** Following the completion of the initial training, the Employment Team is responsible for conducting a formal performance review for the new employee. This review should cover a **full week** of the employee's work after their training has concluded.</li>
+                <li>**Review Focus:** The review should assess the employee's adherence to their role responsibilities, understanding of policies, teamwork, communication, and overall contribution. Feedback should be constructive and aimed at fostering growth.</li>
+                <li>**Documentation:** All performance reviews must be thoroughly documented and filed for future reference.</li>
+            </ul>
+        </section>
+
+        <section id="offboarding" class="mb-8">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-4 border-b border-gray-300 pb-2">5. Offboarding Procedures</h2>
+            <p class="text-gray-700 leading-relaxed">
+                Steps for managing employee departures, including exit interviews to gather feedback, and ensuring all necessary access revocations (e.g., Discord roles, in-game permissions) are completed promptly and securely.
+            </p>
+        </section>
+
+        <section id="document-authorization" class="mb-8">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-4 border-b border-gray-300 pb-2">6. Document Authorization</h2>
+            <p class="text-gray-700 leading-relaxed mb-6">
+                This Employment Team Handbook has been reviewed, approved, and authorized by the Board of Directors of Leeds Karting. This document is effective as of its last revision date and supersedes all previous versions. Adherence to the guidelines and policies outlined herein is mandatory for all Leeds Karting Employment Team staff.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center mt-10">
+                <div>
+                    <p class="signature-font">bdebest18</p>
+                    <p class="text-gray-600">bdebest18</p>
+                    <p class="text-gray-500 text-sm">Board of Directors</p>
+                </div>
+                <div>
+                    <p class="signature-font">jessie005127</p>
+                    <p class="text-gray-600">jessie005127</p>
+                    <p class="text-gray-500 text-sm">Board of Directors</p>
+                </div>
+                <div>
+                    <p class="signature-font">_harvey123</p>
+                    <p class="text-gray-600">_harvey123</p>
+                    <p class="text-gray-500 text-sm">Board of Directors</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <div class="footer-text">
+            Leeds Karting | Employment Team Handbook | Version 1.1 | Last Updated: July 2025
+        </div>
+    </div>
+</body>
+</html>

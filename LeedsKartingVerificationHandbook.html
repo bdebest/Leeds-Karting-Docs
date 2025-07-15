@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leeds Karting Verification Team Handbook</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f0f2f5; display: flex; justify-content: center; align-items: flex-start; min-height: 100vh; padding: 20px; }
+        .a4-page { width: 210mm; min-height: 297mm; background-color: #ffffff; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); border-radius: 8px; padding: 30mm 25mm; box-sizing: border-box; position: relative; overflow: hidden; }
+        .footer-text { position: absolute; bottom: 20mm; left: 25mm; right: 25mm; text-align: center; font-size: 0.8rem; color: #6b7280; }
+        .signature-font { font-family: 'Dancing Script', cursive; font-size: 1.8rem; font-weight: 700; color: #1f2937; margin-bottom: 4px; }
+    </style>
+</head>
+<body>
+    <div class="a4-page">
+        <!-- Header Section - No logo, just text title -->
+        <div class="flex items-center justify-center mb-8 pb-4 border-b-2 border-gray-200">
+            <h1 class="text-4xl font-bold text-gray-800 tracking-wide text-center">Leeds Karting Verification Team Handbook</h1>
+        </div>
+
+        <!-- Table of Contents -->
+        <div class="mb-10">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-4 border-b border-gray-300 pb-2">Table of Contents</h2>
+            <ul class="list-disc list-inside text-gray-600 space-y-2">
+                <li><a href="#introduction" class="text-blue-600 hover:underline">Introduction to Verification</a></li>
+                <li><a href="#process" class="text-blue-600 hover:underline">The Verification Process</a></li>
+                <li><a href="#criteria" class="text-blue-600 hover:underline">Verification Criteria</a></li>
+                <li><a href="#tools" class="text-blue-600 hover:underline">Tools & Resources</a></li>
+                <li><a href="#confidentiality" class="text-blue-600 hover:underline">Confidentiality & Ethics</a></li>
+                <li><a href="#document-authorization" class="text-blue-600 hover:underline">Document Authorization</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content Sections -->
+        <section id="introduction" class="mb-8">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-4 border-b border-gray-300 pb-2">1. Introduction to Verification</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                This handbook guides the Leeds Karting Verification Team in ensuring the authenticity and integrity of our community members, particularly in relation to Discord roles, special permissions, and event participation within our Roblox go-karting community. Your role is vital in maintaining a trustworthy and fair environment. The verification process is designed to be streamlined, but your expertise is crucial for handling exceptions and providing support.
+            </p>
+        </section>
+
+        <section id="process" class="mb-8">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-4 border-b border-gray-300 pb-2">2. The Verification Process</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                The primary verification process at Leeds Karting is automated to provide a quick and efficient experience for our users. However, the Verification Team plays a critical role when the automated system encounters issues or when users require direct assistance.
+            </p>
+
+            <h3 class="text-xl font-semibold text-gray-700 mb-2">2.1 Automated Verification Flow</h3>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Typically, when a user initiates verification (e.g., by pressing a button on our Discord server), our automated bot sends a unique code directly to the user's Discord Direct Messages (DMs). The user is then prompted to input this code back into the system (e.g., into a text box or a specific command). This process is designed for a single attempt. If the user inputs the code incorrectly, or if the bot encounters an issue, they will need to seek manual assistance by opening a ticket with the Verification Team.
+            </p>
+
+            <h3 class="text-xl font-semibold text-gray-700 mb-2">2.2 Manual Verification Team Intervention</h3>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                The Verification Team steps in when the automated process fails or when a user is confused. Users who cannot complete the automated verification will be instructed to open a ticket with the Verification Team.
+            </p>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                When assisting users via tickets, your primary goal is to guide them through the process or manually verify them if necessary.
+            </p>
+
+            <h3 class="text-xl font-semibold text-gray-700 mb-2">2.3 Verification Commands & Usage</h3>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                The Verification Team has access to specific commands to assist users. These commands should be used judiciously and according to policy.
+            </p>
+            <ul class="list-disc list-inside text-gray-700 space-y-2 pl-4">
+                <li><span class="font-semibold">`/resetverificationcode [user]`:</span> This command allows you to generate and send a new verification code to a specified user's Discord DMs. Use this if a user reports not receiving the initial code, or if their single attempt failed due to a technical glitch on their end (e.g., accidental incorrect input).</li>
+                <li><span class="font-semibold">`/forceverify [user] [code]`:</span> This command allows you to manually complete the verification for a user by inputting their Discord user ID or username and the correct code.
+                    <ul class="list-circle list-inside text-gray-700 space-y-1 pl-6 mt-1">
+                        <li>**Important Restriction:** The `/forceverify` command should **ONLY** be used if the user's verification ticket has been open for **over 48 hours**. This policy is in place to encourage users to attempt the automated process independently first and to ensure the Verification Team's time is utilized for genuinely stuck cases, rather than immediate manual overrides. This also ensures users do not feel reliant on staff for a process that is designed to be self-service.</li>
+                        <li>Before using `/forceverify`, ensure you have confirmed the user's identity and the validity of the code through secure means (e.g., asking them to confirm details in the ticket that only they would know, or verifying the code they received).</li>
+                    </ul>
+                </li>
+            </ul>
+            <p class="text-gray-700 leading-relaxed">
+                Always document the use of these commands in the ticket's 'Reason Box' or notes section, including the reason for their use.
+            </p>
+        </section>
+
+        <section id="criteria" class="mb-8">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-4 border-b border-gray-300 pb-2">3. Verification Criteria</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                The Verification Team must understand the underlying criteria for successful verification. This typically includes:
+            </p>
+            <ul class="list-disc list-inside text-gray-700 space-y-2 pl-4">
+                <li>**Valid Discord Account:** The user must possess an active Discord account that is not in violation of Discord's Terms of Service.</li>
+                <li>**Server Membership:** The user must be a member of the official Leeds Karting Discord server.</li>
+                <li>**No History of Severe Violations:** Users with a history of severe rule-breaking within the Leeds Karting community or on Discord may be denied verification for certain roles or privileges.</li>
+                <li>**Age Requirements (if applicable):** Adherence to any age restrictions for certain roles or game features, as determined by Discord or Leeds Karting policy.</li>
+            </ul>
+            <p class="text-gray-700 leading-relaxed">
+                Specific criteria for different verification types (e.g., staff role verification vs. general community role verification) will be detailed in relevant departmental guides.
+            </p>
+        </section>
+
+        <section id="tools" class="mb-8">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-4 border-b border-gray-300 pb-2">4. Tools & Resources</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                The Verification Team utilizes several tools and resources to perform their duties effectively. Please note that **we do not use external APIs** for verification processes. All tools are internal to our Discord bot or server management.
+            </p>
+            <ul class="list-disc list-inside text-gray-700 space-y-2 pl-4">
+                <li><span class="font-semibold">Ticket System:</span> Our primary platform for receiving and managing user requests for verification assistance.</li>
+                <li><span class="font-semibold">Internal Discord Bot Commands:</span> The `/resetverificationcode` and `/forceverify` commands are essential for direct intervention.</li>
+                <li><span class="font-semibold">Discord User Lookup Tools:</span> Built-in Discord features for verifying Discord usernames, IDs, and checking basic account status within our server.</li>
+                <li><span class="font-semibold">Internal Databases/Logs:</span> Access to logs of past verification attempts or any previous disciplinary actions against a user within our community.</li>
+                <li><span class="font-semibold">Team Communication Channels:</span> Dedicated Discord channels for the Verification Team to discuss complex cases, share knowledge, and seek peer assistance.</li>
+            </ul>
+        </section>
+
+        <section id="confidentiality" class="mb-8">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-4 border-b border-gray-300 pb-2">5. Confidentiality & Ethics</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                The Verification Team handles sensitive information. Upholding strict confidentiality and ethical standards is paramount.
+            </p>
+            <ul class="list-disc list-inside text-gray-700 space-y-2 pl-4">
+                <li><span class="font-semibold">Data Privacy:</span> Never share any user's Discord ID, username, or any information gathered during the verification process with unauthorized individuals.</li>
+                <li><span class="font-semibold">Impartiality:</span> Conduct all verifications and assistance impartially, without favoritism or bias. Treat all users fairly.</li>
+                <li><span class="font-semibold">Accuracy:</span> Ensure all information recorded and actions taken are accurate and truthful.</li>
+                <li><span class="font-semibold">Security:</span> Protect your own staff account credentials and do not share access to verification tools.</li>
+                <li><span class="font-semibold">Professionalism:</span> Maintain a professional demeanor in all interactions, even when dealing with frustrated users.</li>
+            </ul>
+        </section>
+
+        <section id="document-authorization" class="mb-8">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-4 border-b border-gray-300 pb-2">6. Document Authorization</h2>
+            <p class="text-gray-700 leading-relaxed mb-6">
+                This Verification Team Handbook has been reviewed, approved, and authorized by the Board of Directors of Leeds Karting. This document is effective as of its last revision date and supersedes all previous versions. Adherence to the guidelines and policies outlined herein is mandatory for all Leeds Karting Verification Team staff.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center mt-10">
+                <div>
+                    <p class="signature-font">bdebest18</p>
+                    <p class="text-gray-600">bdebest18</p>
+                    <p class="text-gray-500 text-sm">Board of Directors</p>
+                </div>
+                <div>
+                    <p class="signature-font">jessie005127</p>
+                    <p class="text-gray-600">jessie005127</p>
+                    <p class="text-gray-500 text-sm">Board of Directors</p>
+                </div>
+                <div>
+                    <p class="signature-font">_harvey123</p>
+                    <p class="text-gray-600">_harvey123</p>
+                    <p class="text-gray-500 text-sm">Board of Directors</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <div class="footer-text">
+            Leeds Karting | Verification Team Handbook | Version 1.2 | Last Updated: July 2025
+        </div>
+    </div>
+</body>
+</html>
